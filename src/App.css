@@ -1,0 +1,173 @@
+/* Overarching stlyes */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Card styles */
+.card {
+  text-align: left;
+  width: 75vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid slategray;
+  box-shadow: black 30px 30px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.card h1 {
+  line-height: 40px;
+}
+
+/* Pop-up styles */
+.popup {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(40, 40, 40, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+#successCard {
+  border: 2px dotted #7ef936;
+}
+
+#failureCard {
+  border: 2px dotted #fc3a3a;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
+}
+
+form
+  :is(
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"]
+  ) {
+  width: full;
+  border: none;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+form
+  :is(
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"]
+  ):focus-visible {
+  outline: none;
+  border: none;
+}
+
+form :h1 {
+  line-height: 40px;
+}
+
+form label {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+form select {
+  width: full;
+  background-color: slategray;
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+form select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+form option {
+  padding: 25px;
+  background-color: slategrey;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+/* Button stlyes */
+button {
+  margin: auto;
+  margin-top: 20px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.successBtn {
+  background-color: #7ef936;
+}
+
+.failureBtn {
+  background-color: #fc3a3a;
+}
+
+.successBtn:hover {
+  background-color: #9ff46e;
+}
+
+.failureBtn:hover {
+  background-color: #fc5249;
+}
+
+/* Misc styles */
+.error {
+  color: red;
+  padding-bottom: 10px;
+}
