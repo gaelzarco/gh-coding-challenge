@@ -1,3 +1,5 @@
+<div align='center'>
+
 # Vite + React
 
 This is a [Vite](https://vitejs.dev) project together with React.
@@ -12,3 +14,5 @@ This is a [Vite](https://vitejs.dev) project together with React.
 - [CodeSandbox — Discord](https://discord.gg/Ggarp3pX5H)
 - [Vite — GitHub](https://github.com/vitejs/vite)
 - [Vite — Docs](https://vitejs.dev/guide/)
+
+</div>
